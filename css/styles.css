@@ -567,6 +567,10 @@ a:hover {
 	}
 
 	.columns__item + .columns__item {
+		margin-top: 5rem;
+	}
+
+	.for__item + .for__item {
 		margin-top: 0;
 	}
 
