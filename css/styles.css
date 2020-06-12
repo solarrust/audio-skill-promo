@@ -119,10 +119,13 @@ a:hover {
 	background-color: #ff153c;
 	border: none;
 	border-radius: 50px;
+	transition: all 0.3s;
 }
 
 .btn:hover {
 	cursor: pointer;
+	background-color: #5bbe90;
+	transform: scale(1.1);
 }
 
 .dark {
@@ -452,6 +455,12 @@ a:hover {
 	padding: 12rem 0;
 }
 
+.footer__title {
+	margin-bottom: 7rem;
+	font-size: 4.8rem;
+	font-weight: 700;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 	.author__img:before {
@@ -537,12 +546,66 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+	.header {
+		padding: 2rem 0;
+	}
+
+	.header__container {
+		width: 100%;
+	}
+
+	.header__title {
+		font-size: 5.4rem;
+	}
+
+	.header__subtitle {
+		font-size: 3.4rem;
+	}
+
 	.logo {
 		margin: 0 auto;
 	}
 
+	.columns__item + .columns__item {
+		margin-top: 0;
+	}
+
+	.free .text {
+		margin-bottom: 7rem;
+	}
+
+	.knows__title {
+		margin-bottom: 5rem;
+	}
+
 	.after__list {
 		columns: auto;
+	}
+
+	.list__item:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+
+	.for {
+		padding: 7rem 0;
+	}
+
+	.for__container {
+		margin-top: 3rem;
+	}
+
+	.for__item {
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.for__item:before {
+		top: auto;
+		margin-right: 15px;
+	}
+
+	.for__text {
+		min-width: auto;
 	}
 
 	.free__subtitle {
@@ -551,6 +614,18 @@ a:hover {
 
 	.soldier {
 		display: none;
+	}
+
+	.after {
+		padding: 7rem 0;
+	}
+
+	.after__list {
+		margin-top: 5rem;
+	}
+
+	.authors {
+		padding: 7rem 0;
 	}
 
 	.slide {
@@ -586,4 +661,14 @@ a:hover {
 		border-radius: 50%;
 		background-color: #ff153c;
 	}
+
+	.footer {
+		padding: 7rem 0;
+	}
+
+	.footer__title {
+		margin-bottom: 3rem;
+	}
 }
+
+
