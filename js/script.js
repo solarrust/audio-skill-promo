@@ -1,3 +1,4 @@
+
 $(".slider").slick({
  slidesToShow: 1,
  slidesToScroll: 1,
@@ -5,5 +6,9 @@ $(".slider").slick({
  centerMode: true
 });
 
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
+
+window.addEventListener("scroll", (e) => {
+ const decor = document.querySelector("[data-parallax]");
+
+ decor.style.top = - (window.pageYOffset * 0.1) + "px";
+})

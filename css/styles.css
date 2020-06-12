@@ -126,11 +126,12 @@ a:hover {
 
 .decor {
 	position: absolute;
-	top: 60%;
+	top: 0;
 	right: 0;
 	z-index: 2;
 	width: 380px;
 	height: 1200px;
+	margin-top: 60%;
 	background: url("../img/decor.png") no-repeat center left / cover;
 }
 
