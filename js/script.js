@@ -3,7 +3,15 @@ $(".slider").slick({
  slidesToShow: 1,
  slidesToScroll: 1,
  variableWidth: true,
- centerMode: true
+ centerMode: true,
+ responsive: [{
+  breakpoint: 480,
+  settings: {
+   arrows: false,
+   dots: true,
+   slidesToScroll: true
+  }
+ }]
 });
 
 
